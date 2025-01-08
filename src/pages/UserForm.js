@@ -52,9 +52,9 @@ export default function UserForm() {
 
   const handleSubmit = () => {
     if (validateForm()) {
-      console.log("Form submitted:", inputList);
+      alert("Form Submitted Successfully");
     } else {
-      console.log("Form has errors");
+      console.log("Error");
     }
   };
   
@@ -127,7 +127,7 @@ export default function UserForm() {
                       onClick={() => handleRemoveFields(index)}
                       disabled={inputList.length === 1}
                     >
-                      -
+                      Delete
                     </button>
                   </div>
                 </div>
