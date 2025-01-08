@@ -111,7 +111,7 @@ export default function UserForm() {
                       <div className="text-danger">{errors[index].gender}</div>
                     )}
                   </div>
-                  <div className="col-md-4 mt-4">
+                  <div className="col-md-4" style={{ marginTop: "30px"}}>
                     {index === inputList.length - 1 && (
                     <button
                       type="button"
@@ -139,7 +139,7 @@ export default function UserForm() {
                 Submit
               </button>
             </div>
-            <h3 className="text-primary">{JSON.stringify(inputList)}</h3>
+            <h3>{JSON.stringify(inputList)}</h3>
             <table className="table">
               <thead>  
                 <tr>
